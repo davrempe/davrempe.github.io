@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Davis Rempe</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/1-col-portfolio.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Davis Rempe</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="publications.html">Research</a>
+                    </li>
+                    <li>
+                        <a href="cv.html">CV</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Journal Publications
+                    <!--<small>Secondary Text</small> -->
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+		<div class="row">
+            <div class="col-md-8">
+                <h3>Effectiveness of Global, Low-Degree Polynomial Transformations for GCxGC Data Alignment</h3>
+                <h4><b>D. Rempe</b>, S. Reichenbach, Q. Tao, C. Cordero, W. Rathbun, and C.A. Zini. Analytical Chemistry, 88(20), pp. 10028-10035, 2016.</h4>
+                <p> As columns age and differ between systems, retention times for comprehensive two-dimensional gas chromatography (GCxGC) may
+				vary between runs. In order to properly analyze GCxGC chromatograms, it often is desirable to align the retention times of
+				chromatographic features, such as analyte peaks, between chromatograms. Previous work by the authors has shown that global, low-degree
+				polynomial transformation functions – namely affine, second-degree polynomial, and third-degree polynomial – are effective for aligning
+				pairs of two-dimensional chromatograms acquired with dual second columns and detectors (GCx2GC). This work assesses the experimental performance
+				of these global methods on more general GCxGC chromatogram pairs and com- pares their performance to that of a recent, robust, local
+				alignment algorithm for GCxGC data [Gros et al., Anal. Chem. 2012, 84, 9033]. Measuring performance with the root-mean-square (RMS) residual
+				differences in retention times for matched peaks suggests that global, low-degree polynomial transformations outperform the local algorithm
+				given a sufficiently large set of alignment points, and are able to improve misalignment by over 95% based on a lower-bound benchmark of inherent
+				variability. However, with small sets of alignment points, the local method demonstrated lower error rates (although with greater computational
+				overhead). For GCxGC chromatogram pairs with only slight initial misalignment, none of the global or local methods performed well. In some cases
+				with initial misalignment near the inherent variability of the system, these methods worsened alignment, suggesting that it may be better not to
+				perform alignment in such cases. </p>
+                <a class="btn btn-primary" href="docs/publishedAC_091816.pdf">Paper <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-primary" href="docs/publishedAC_091816_supportingInfo.pdf">Supporting Info <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            <div class="col-md-4">
+                <a href="docs/publishedAC_091816.pdf">
+                    </br> <img class="img-responsive" src="images/alignmentTOC_gcxgc.gif" alt="">
+                </a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-8">
+                <h3>Alignment for Comprehensive Two-Dimensional Gas Chromatography with Dual Secondary Columns and Detectors</h3>
+                <h4>S. Reichenbach, <b>D. Rempe</b>, Q. Tao, D. Bressanello, E. Liberto, C. Bicchi, S. Balducci, and C. Cordero. Analytical Chemistry, 87(19), pp. 10056-10063, 2015.</h4>
+                <p> In each sample run, comprehensive two-dimensional gas chromatography with dual secondary columns and detectors (GC × 2GC) provides
+                    complementary information in two chromatograms generated by its two detectors. For example, a flame ionization detector (FID) produces
+                    data that is especially effective for quantification and a mass spectrometer (MS) produces data that is especially useful for chemical-structure
+                    elucidation and compound identification. The greater information capacity of two detectors is most useful for difficult analyses,
+                    such as metabolomics, but using the joint information offered by the two complex two-dimensional chromatograms requires data fusion.
+                    In the case that the second columns are equivalent but flow conditions vary (e.g., related to the operative pressure of their different detectors),
+                    data fusion can be accomplished by aligning the chromatographic data and/or chromatographic features such as peaks and retention-time windows.
+                    Chromatographic alignment requires a mapping from the retention times of one chromatogram to the retention times of the other chromatogram.
+                    This paper considers general issues and experimental performance for global two-dimensional mapping functions to align pairs of GC × 2GC chromatograms.
+                    Experimental results for GC × 2GC with FID and MS for metabolomic analyses of human urine samples suggest that low-degree polynomial mapping functions
+                    out-perform affine transformation (as measured by root-mean-square residuals for matched peaks) and achieve performance near a lower-bound benchmark
+                    of inherent variability. Third-degree polynomials slightly out-performed second-degree polynomials in these results, but second-degree polynomials
+                    performed nearly as well and may be preferred for parametric and computational simplicity as well as robustness. </p>
+                <a class="btn btn-primary" href="docs/publishedAC_092215.pdf">Paper <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-primary" href="docs/publishedAC_092215_supportingInfo.pdf">Supporting Info <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            <div class="col-md-4">
+                <a href="docs/publishedAC_092215.pdf">
+                    </br> <img class="img-responsive" src="images/screenshot_gcx2gc.gif" alt=""> </br>
+                    <img class="img-responsive" src="images/screenshot2_gcx2gc.gif" alt="">
+                </a>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- /.row -->
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Undergraduate Thesis</h3>
+                <h4>Advised by Stephen Scott and Stephen Reichenbach</h4>
+                <a class="btn btn-primary" href="docs/distinction-thesis.pdf">Paper <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Conference Publications and Presentations
+                    <!--<small>Secondary Text</small> -->
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-md-12">
+                <h3>A Cognitive Radio TV Prototype for Effective TV Spectrum Sharing</h3>
+                <h4><b>D. Rempe</b>, M. Snyder, A. Pracht, A. Schwarz, T. Nguyen, <u>M. Vostrez</u>, <u>Z. Zhao</u>, and M.C. Vuran. 2017 IEEE International Symposium on Dynamic Spectrum Access Networks (DySPAN) (IEEE DySPAN 2017), pp. 110-111, Baltimore, MD, USA, March 6-9, 2017.</h4>
+                <a class="btn btn-primary" href="docs/dyspan2017_final_published.pdf">Demo Paper <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Simple models for second-column retention-time variability across peaks from GCxGC</h3>
+                <h4> S. Reichenbach, <u><b>D. Rempe</b></u>, Q. Tao, and C. Cordero, 8th Multidimensional Chromatography Workshop, Toronto, ON, Canada, January 5-6, 2017.</h4>
+                <a class="btn btn-primary" href="docs/MDCW_20161229_4-3_noAnim.pdf">Slides <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Project One -->
+		<div class="row">
+            <div class="col-md-12">
+                <h3>Alignment for Comprehensive Two-Dimensional Gas Chromatography (GCxGC) with Global, Low-Order Polynomial Transformations</h3>
+                <h4><u><b>D. Rempe</b></u>, S. Reichenbach, and S. Scott, UNL Spring Research Fair Poster Session, Lincoln, NE, USA, April, 2016.</h4>
+                <a class="btn btn-primary" href="docs/UNL_poster_session.pdf">Poster <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+
+        <hr>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
