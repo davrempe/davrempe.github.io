@@ -75,8 +75,41 @@
 
         <div class="row">
             <div class="col-md-8">
+                <h3>Predicting the Physical Dynamics of Unseen 3D Objects</h3>
+                <h4><b>D. Rempe</b>, S. Sridhar, H. Wang, and L. Guibas. Winter Conference on Applications of Computer Vision (<b>WACV</b>), 2020.</h4>
+                <p> Machines that can predict the effect of physical interactions on the dynamics of previously unseen object instances are important for creating better robots, autonomous vehicles, and interactive virtual worlds. In this work, we focus on predicting the dynamics of 3D objects on a plane that have just been subjected to an impulsive force. In particular, we predict the changes in state---3D position, rotation, velocities, and stability. Different from previous work, our approach can generalize dynamics predictions to object shapes and initial conditions that were unseen during training. Our method takes the 3D object's shape as a point cloud and its initial linear and angular velocities as input. We extract shape features and use a recurrent neural network to predict the full change in state at each time step. Our model can support training with data from both a physics engine or the real world. Experiments show that we can accurately predict the changes in state for unseen object geometries and initial conditions. </p>
+                <a class="btn btn-primary" href="docs/Learning_Dynamics_WACV_preprint.pdf">Preprint <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            <div class="col-md-4">
+                <a href="docs/Learning_Dynamics_WACV_preprint.pdf">
+                    </br> <img class="img-responsive" src="images/wacv_dynamics_teaser.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-8">
+                <h3>Multiview Aggregation for Learning Category-Specific Shape Reconstruction</h3>
+                <h4>S. Sridhar, <b>D. Rempe</b>, J. Valentin,  S. Bouaziz, and L. Guibas. Advances in Neural Information Processing Systems (<b>NeurIPS</b>), 2019.</h4>
+                <p> We investigate the problem of learning category-specific 3D shape reconstruction from a variable number of RGB views of previously unobserved object instances. Most approaches for multiview shape reconstruction operate on sparse shape representations, or assume a fixed number of views. We present a method that can estimate dense 3D shape, and aggregate shape across multiple and varying number of input views. Given a single input view of an object instance, we propose a representation that encodes the dense shape of the visible object surface as well as the surface behind line of sight occluded by the visible surface. When multiple input views are available, the shape representation is designed to be aggregated into a single 3D shape using an inexpensive union operation. We train a 2D CNN to learn to predict this representation from a variable number of views (1 or more). We further aggregate multiview information by using permutation equivariant layers that promote order-agnostic view information exchange at the feature level. Experiments show that our approach is able to produce dense 3D reconstructions of objects that improve in quality as more views are added. </p>
+                <a class="btn btn-primary" href="https://geometry.stanford.edu/projects/xnocs/">Project Page <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-primary" href="https://geometry.stanford.edu/projects/xnocs/pub/xnocs.pdf">Paper <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            <div class="col-md-4">
+                <a href="https://geometry.stanford.edu/projects/xnocs/">
+                    </br> <img class="img-responsive" src="images/xnocs_teaser.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-8">
                 <h3>Learning Generalizable Final-State Dynamics of 3D Rigid Objects</h3>
-                <h4><b>D. Rempe</b>, S. Sridhar, H. Wang, and L. Guibas. CVPR Workshop on 3D Scene Understanding for Vision, Graphics, and Robotic, 2019.</h4>
+                <h4><b>D. Rempe</b>, S. Sridhar, H. Wang, and L. Guibas. <b>CVPR Workshop</b> on 3D Scene Understanding for Vision, Graphics, and Robotics, 2019.</h4>
                 <p> Humans have a remarkable ability to predict the effect of physical interactions on the dynamics of objects. Endowing machines with this ability would allow important applications in areas like robotics and autonomous vehicles. In this work, we focus on predicting the dynamics of 3D rigid objects, in particular an object's final resting position and total rotation when subjected to an impulsive force. Different from previous work, our approach is capable of generalizing to unseen object shapes---an important requirement for real-world applications. To achieve this, we represent object shape as a 3D point cloud that is used as input to a neural network, making our approach agnostic to appearance variation. The design of our network is informed by an understanding of physical laws. We train our model with data from a physics engine that simulates the dynamics of a large number of shapes. Experiments show that we can accurately predict the resting position and total rotation for unseen object geometries. </p>
                 <a class="btn btn-primary" href="https://geometry.stanford.edu/projects/learningdynamics/">Project Page <span class="glyphicon glyphicon-chevron-right"></span></a>
                 <a class="btn btn-primary" href="https://geometry.stanford.edu/projects/learningdynamics/content/Dynamics_CVPR_Workshop_CamReady.pdf">Workshop Paper <span class="glyphicon glyphicon-chevron-right"></span></a>
@@ -94,7 +127,7 @@
 		<div class="row">
             <div class="col-md-8">
                 <h3>Effectiveness of Global, Low-Degree Polynomial Transformations for GCxGC Data Alignment</h3>
-                <h4><b>D. Rempe</b>, S. Reichenbach, Q. Tao, C. Cordero, W. Rathbun, and C.A. Zini. Analytical Chemistry, 88(20), pp. 10028-10035, 2016.</h4>
+                <h4><b>D. Rempe</b>, S. Reichenbach, Q. Tao, C. Cordero, W. Rathbun, and C.A. Zini. <b>Analytical Chemistry</b>, 88(20), pp. 10028-10035, 2016.</h4>
                 <p> As columns age and differ between systems, retention times for comprehensive two-dimensional gas chromatography (GCxGC) may
 				vary between runs. In order to properly analyze GCxGC chromatograms, it often is desirable to align the retention times of
 				chromatographic features, such as analyte peaks, between chromatograms. Previous work by the authors has shown that global, low-degree
@@ -123,7 +156,7 @@
         <div class="row">
             <div class="col-md-8">
                 <h3>Alignment for Comprehensive Two-Dimensional Gas Chromatography with Dual Secondary Columns and Detectors</h3>
-                <h4>S. Reichenbach, <b>D. Rempe</b>, Q. Tao, D. Bressanello, E. Liberto, C. Bicchi, S. Balducci, and C. Cordero. Analytical Chemistry, 87(19), pp. 10056-10063, 2015.</h4>
+                <h4>S. Reichenbach, <b>D. Rempe</b>, Q. Tao, D. Bressanello, E. Liberto, C. Bicchi, S. Balducci, and C. Cordero. <b>Analytical Chemistry</b>, 87(19), pp. 10056-10063, 2015.</h4>
                 <p> In each sample run, comprehensive two-dimensional gas chromatography with dual secondary columns and detectors (GC × 2GC) provides
                     complementary information in two chromatograms generated by its two detectors. For example, a flame ionization detector (FID) produces
                     data that is especially effective for quantification and a mass spectrometer (MS) produces data that is especially useful for chemical-structure
