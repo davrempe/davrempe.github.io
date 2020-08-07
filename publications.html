@@ -75,6 +75,42 @@
 
         <div class="row">
             <div class="col-md-8">
+                <h3>CaSPR: Learning Canonical Spatiotemporal Point Cloud Representations</h3>
+                <h4><b>D. Rempe</b>, T. Birdal, Y. Zhao, Z. Gojcic, S. Sridhar, and L. Guibas. arXiv, 2020.</h4>
+                <p> We propose CaSPR, a method to learn object-centric canonical spatiotemporal point cloud representations of dynamically moving or evolving objects. Our goal is to enable information aggregation over time and the interrogation of object state at any spatiotemporal neighborhood in the past, observed or not. Different from previous work, CaSPR learns representations that support spacetime continuity, are robust to variable and irregularly spacetime-sampled point clouds, and generalize to unseen object instances. Our approach divides the problem into two subtasks. First, we explicitly encode time by mapping an input point cloud sequence to a spatiotemporally-canonicalized object space. We then leverage this canonicalization to learn a spatiotemporal latent representation using neural ordinary differential equations and a generative model of dynamically evolving shapes using continuous normalizing flows. We demonstrate the effectiveness of our method on several applications including shape reconstruction, camera pose estimation, continuous spatiotemporal sequence reconstruction, and correspondence estimation from irregularly or intermittently sampled observations. </p>
+                <a class="btn btn-primary" href="https://geometry.stanford.edu/projects/caspr/">Project Page <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-primary" href="https://geometry.stanford.edu/projects/caspr/content/caspr_preprint_full_res.pdf">Paper <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            <div class="col-md-4">
+            </br></br>
+                <a href="docs/caspr_preprint_full_res.pdf">
+                    </br> <img class="img-responsive" width="100%" height="100%" src="images/caspr_teaser.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-8">
+                <h3>Contact and Human Dynamics from Monocular Video</h3>
+                <h4><b>D. Rempe</b>, L. Guibas, A. Hertzmann, B. Russell, R. Villegas, and J. Yang. European Conference on Computer Vision (<b>ECCV</b>), 2020.</h4> <h4 style="color:red;">Spotlight</h4>
+                <p> Existing deep models predict 2D and 3D kinematic poses from video that are approximately accurate, but contain visible errors that violate physical constraints, such as feet penetrating the ground and bodies leaning at extreme angles. In this paper, we present a physics-based method for inferring 3D human motion from video sequences that takes initial 2D and 3D pose estimates as input. We first estimate ground contact timings with a novel prediction network which is trained without hand-labeled data. A physics-based trajectory optimization then solves for a physically-plausible motion, based on the inputs. We show this process produces motions that are significantly more realistic than those from purely kinematic methods, substantially improving quantitative measures of both kinematic and dynamic plausibility. We demonstrate our method on character animation and pose estimation tasks on dynamic motions of dancing and sports with complex contact patterns. </p>
+                <a class="btn btn-primary" href="https://geometry.stanford.edu/projects/human-dynamics-eccv-2020/">Project Page <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-primary" href="https://geometry.stanford.edu/projects/human-dynamics-eccv-2020/content/contact-and-dynamics-2020.pdf">Paper <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            <div class="col-md-4">
+            </br></br></br>
+                <a href="docs/contact-and-dynamics-2020.pdf">
+                    </br> <img class="img-responsive" width="130%" height="130%" src="images/human_dynamics_teaser.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-8">
                 <h3>Predicting the Physical Dynamics of Unseen 3D Objects</h3>
                 <h4><b>D. Rempe</b>, S. Sridhar, H. Wang, and L. Guibas. Winter Conference on Applications of Computer Vision (<b>WACV</b>), 2020.</h4>
                 <p> Machines that can predict the effect of physical interactions on the dynamics of previously unseen object instances are important for creating better robots, autonomous vehicles, and interactive virtual worlds. In this work, we focus on predicting the dynamics of 3D objects on a plane that have just been subjected to an impulsive force. In particular, we predict the changes in state---3D position, rotation, velocities, and stability. Different from previous work, our approach can generalize dynamics predictions to object shapes and initial conditions that were unseen during training. Our method takes the 3D object's shape as a point cloud and its initial linear and angular velocities as input. We extract shape features and use a recurrent neural network to predict the full change in state at each time step. Our model can support training with data from both a physics engine or the real world. Experiments show that we can accurately predict the changes in state for unseen object geometries and initial conditions. </p>
@@ -82,6 +118,7 @@
                 <a class="btn btn-primary" href="https://geometry.stanford.edu/projects/learningdynamicsWACV2020/content/Learning_Dynamics_WACV_2020.pdf">Paper <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
             <div class="col-md-4">
+            </br></br></br>
                 <a href="docs/Learning_Dynamics_WACV_preprint.pdf">
                     </br> <img class="img-responsive" src="images/wacv_dynamics_teaser.png" alt="">
                 </a>
@@ -99,6 +136,7 @@
                 <a class="btn btn-primary" href="https://geometry.stanford.edu/projects/xnocs/pub/xnocs.pdf">Paper <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
             <div class="col-md-4">
+            </br></br></br>
                 <a href="https://geometry.stanford.edu/projects/xnocs/">
                     </br> <img class="img-responsive" src="images/xnocs_teaser.png" alt="">
                 </a>
@@ -146,6 +184,7 @@
                 <a class="btn btn-primary" href="docs/publishedAC_091816_supportingInfo.pdf">Supporting Info <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
             <div class="col-md-4">
+            </br></br></br>
                 <a href="docs/publishedAC_091816.pdf">
                     </br> <img class="img-responsive" src="images/alignmentTOC_gcxgc.gif" alt="">
                 </a>
