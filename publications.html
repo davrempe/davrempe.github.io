@@ -75,6 +75,24 @@
 
         <div class="row">
             <div class="col-md-8">
+                <h3>Generating Useful Accident-Prone Driving Scenarios via a Learned Traffic Prior</h3>
+                <h4><b>D. Rempe</b>, J. Philion, L. Guibas, S. Fidler, and O. Litany. arXiv preprint, 2021.</h4>
+                <p>Evaluating and improving planning for autonomous vehicles requires scalable generation of long-tail traffic scenarios. To be useful, these scenarios must be realistic and challenging, but not impossible to drive through safely. In this work, we introduce STRIVE, a method to automatically generate challenging scenarios that cause a given planner to produce undesirable behavior, like collisions. To maintain scenario plausibility, the key idea is to leverage a learned model of traffic motion in the form of a graph-based conditional VAE. Scenario generation is formulated as an optimization in the latent space of this traffic model, effected by perturbing an initial real-world scene to produce trajectories that collide with a given planner. A subsequent optimization is used to find a "solution" to the scenario, ensuring it is useful to improve the given planner. Further analysis clusters generated scenarios based on collision type. We attack two planners and show that STRIVE successfully generates realistic, challenging scenarios in both cases. We additionally "close the loop" and use these scenarios to optimize hyperparameters of a rule-based planner.</p>
+                <a class="btn btn-primary" href="https://nv-tlabs.github.io/STRIVE/">Project Page <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-primary" href="https://nv-tlabs.github.io/STRIVE/docs/strive.pdf">Paper <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            <div class="col-md-4">
+            </br></br>
+                <a href="https://nv-tlabs.github.io/STRIVE/docs/strive.pdf">
+                    </br> <img class="img-responsive" width="100%" height="100%" src="images/strive_teaser.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-8">
                 <h3>HuMoR: 3D Human Motion Model for Robust Pose Estimation</h3>
                 <h4><b>D. Rempe</b>, T. Birdal, A. Hertzmann, J. Yang, S. Sridhar, and L. Guibas. International Conference on Computer Vision (<b>ICCV</b>), 2021.</h4> <h4 style="color:red;">Oral Presentation</h4>
                 <p> We introduce HuMoR: a 3D Human Motion Model for Robust Estimation of temporal pose and shape. Though substantial progress has been made in estimating 3D human motion and shape from dynamic observations, recovering plausible pose sequences in the presence of noise and occlusions remains a challenge. For this purpose, we propose an expressive generative model in the form of a conditional variational autoencoder, which learns a distribution of the change in pose at each step of a motion sequence. Furthermore, we introduce a flexible optimization-based approach that leverages HuMoR as a motion prior to robustly estimate plausible pose and shape from ambiguous observations. Through extensive evaluations, we demonstrate that our model generalizes to diverse motions and body shapes after training on a large motion capture dataset, and enables motion reconstruction from multiple input modalities including 3D keypoints and RGB(-D) videos.</p>
