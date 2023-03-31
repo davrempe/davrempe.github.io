@@ -72,6 +72,63 @@
 
         <div class="row">
             <div class="col-md-8">
+                <h3>CurveCloudNet: Processing Point Clouds with 1D Structure</h3>
+                <h4>C. Stearns, J. Liu, <b>D. Rempe</b>, D. Paschalidou, J. Park, S. Mascha, and L. Guibas. <b>arXiv</b>, 2023.</h4>
+                <p>Modern depth sensors such as LiDAR operate by sweeping laser-beams across the scene, resulting in a point cloud with notable 
+                    1D curve-like structures. In this work, we introduce a new point cloud processing scheme and backbone, called CurveCloudNet, 
+                    which takes advantage of the curve-like structure inherent to these sensors. While existing backbones discard the rich 1D 
+                    traversal patterns and rely on Euclidean operations, CurveCloudNet parameterizes the point cloud as a collection of polylines 
+                    (dubbed a "curve cloud"), establishing a local surface-aware ordering on the points. Our method applies curve-specific operations
+                     to process the curve cloud, including a symmetric 1D convolution, a ball grouping for merging points along curves, and an 
+                     efficient 1D farthest point sampling algorithm on curves. By combining these curve operations with existing point-based operations, 
+                     CurveCloudNet is an efficient, scalable, and accurate backbone with low GPU memory requirements. Evaluations on the ShapeNet, 
+                     Kortx, Audi Driving, and nuScenes datasets demonstrate that CurveCloudNet outperforms both point-based and sparse-voxel backbones 
+                     in various segmentation settings, notably scaling better to large scenes than point-based alternatives while exhibiting better 
+                     single object performance than sparse-voxel alternatives.</p>
+                <!-- <a class="btn btn-primary" href="https://sites.google.com/stanford.edu/copilot">Project Page <span class="glyphicon glyphicon-chevron-right"></span></a> -->
+                <a class="btn btn-primary" href="https://arxiv.org/abs/2303.12050">Paper <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            <div class="col-md-4">
+            </br></br>
+                <a href="https://arxiv.org/abs/2303.12050">
+                    </br> <img class="img-responsive" width="100%" height="100%" src="images/curve_cloud_teaser.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-8">
+                <h3>COPILOT: Human-Environment Collision Prediction and Localization from Multi-view Egocentric Videos</h3>
+                <h4>B. Pan, B. Shen, <b>D. Rempe</b>, D. Paschalidou, K. Mo, Y. Yang, and L. Guibas. <b>arXiv</b>, 2023.</h4>
+                <p>The ability to forecast human-environment collisions from egocentric observations is vital to enable collision avoidance 
+                    in applications such as VR, AR, and wearable assistive robotics. In this work, we introduce the challenging problem of 
+                    predicting collisions in diverse environments from multi-view egocentric videos captured from body-mounted cameras. 
+                    Solving this problem requires a generalizable perception system that can classify which human body joints will collide 
+                    and estimate a collision region heatmap to localize collisions in the environment. To achieve this, we propose a 
+                    transformer-based model called COPILOT to perform collision prediction and localization simultaneously, which accumulates 
+                    information across multi-view inputs through a novel 4D space-time-viewpoint attention mechanism. To train our model and 
+                    enable future research on this task, we develop a synthetic data generation framework that produces egocentric videos of 
+                    virtual humans moving and colliding within diverse 3D environments. This framework is then used to establish a large-scale
+                     dataset consisting of 8.6M egocentric RGBD frames. Extensive experiments show that COPILOT generalizes to unseen synthetic 
+                     as well as real-world scenes. We further demonstrate COPILOT outputs are useful for downstream collision avoidance through 
+                     simple closed-loop control.</p>
+                <a class="btn btn-primary" href="https://sites.google.com/stanford.edu/copilot">Project Page <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-primary" href="https://arxiv.org/abs/2210.01781">Paper <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            <div class="col-md-4">
+            </br></br>
+                <a href="https://arxiv.org/abs/2210.01781">
+                    </br> <img class="img-responsive" width="100%" height="100%" src="images/copilot_teaser.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-8">
                 <h3>Guided Conditional Diffusion for Controllable Traffic Simulation</h3>
                 <h4>Z. Zhong, <b>D. Rempe</b>, D. Xu, Y. Chen, S. Veer, T. Che, B. Ray, and M. Pavone. International Conference on Robotics and Automation (<b>ICRA</b>), 2023.</h4>
                 <p>Controllable and realistic traffic simulation is critical for developing and verifying autonomous vehicles. 
@@ -87,11 +144,11 @@
                     dataset for diverse and composite rules, demonstrating improvement over strong baselines in terms of the 
                     controllability-realism tradeoff.</p>
                 <a class="btn btn-primary" href="https://aiasd.github.io/ctg.github.io/">Project Page <span class="glyphicon glyphicon-chevron-right"></span></a>
-                <a class="btn btn-primary" href="https://arxiv.org/pdf/2210.17366.pdf">Paper <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-primary" href="https://arxiv.org/abs/2210.17366">Paper <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
             <div class="col-md-4">
             </br></br>
-                <a href="https://arxiv.org/pdf/2210.17366.pdf">
+                <a href="https://arxiv.org/abs/2210.17366">
                     </br> <img class="img-responsive" width="100%" height="100%" src="images/ctg_teaser.png" alt="">
                 </a>
             </div>
@@ -339,9 +396,19 @@
         <!-- /.row -->
         <div class="row">
             <div class="col-md-12">
+                <h3>PhD Thesis</h3>
+                <h4>Advised by Leonidas Guibas</h4>
+                <a class="btn btn-primary" href="docs/Rempe_thesis_final-published.pdf">Thesis <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-12">
                 <h3>Undergraduate Thesis</h3>
                 <h4>Advised by Stephen Scott and Stephen Reichenbach</h4>
-                <a class="btn btn-primary" href="docs/distinction-thesis.pdf">Paper <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-primary" href="docs/distinction-thesis.pdf">Thesis <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
 
