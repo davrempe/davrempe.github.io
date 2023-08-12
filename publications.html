@@ -72,6 +72,89 @@
 
         <div class="row">
             <div class="col-md-8">
+                <h3>NIFTY: Neural Object Interaction Fields for Guided Human Motion Synthesis</h3>
+                <h4>N. Kulkarni, <b>D. Rempe</b>, K. Genova, A. Kundu, J. Johnson, D. Fouhey, L. Guibas. <b>arXiv</b>, 2023.</h4>
+                <p>We address the problem of generating realistic 3D motions of humans interacting with objects in a scene. Our key 
+                    idea is to create a neural interaction field attached to a specific object, which outputs the distance to the 
+                    valid interaction manifold given a human pose as input. This interaction field guides the sampling of an 
+                    object-conditioned human motion diffusion model, so as to encourage plausible contacts and affordance semantics. To 
+                    support interactions with scarcely available data, we propose an automated synthetic data pipeline. For this, 
+                    we seed a pre-trained motion model, which has priors for the basics of human movement, with interaction-specific 
+                    anchor poses extracted from limited motion capture data. Using our guided diffusion model trained on generated synthetic
+                    data, we synthesize realistic motions for sitting and lifting with several objects, outperforming alternative approaches 
+                    in terms of motion quality and successful action completion. We call our framework NIFTY: Neural Interaction Fields for 
+                    Trajectory sYnthesis.</p>
+                <a class="btn btn-primary" href="https://nileshkulkarni.github.io/nifty/">Project Page <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-primary" href="https://nileshkulkarni.github.io/nifty/assets/paper.pdf">Paper <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            <div class="col-md-4">
+            </br></br>
+                <a href="https://nileshkulkarni.github.io/nifty/assets/paper.pdf">
+                    </br> <img class="img-responsive" width="100%" height="100%" src="images/nifty_teaser.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-8">
+                <h3>Language-Guided Traffic Simulation via Scene-Level Diffusion</h3>
+                <h4>Z. Zhong, <b>D. Rempe</b>, Y. Chen, B. Ivanovic, Y. Cao, D. Xu, M. Pavone, and B. Ray. <b>arXiv</b>, 2023.</h4>
+                <p>Realistic and controllable traffic simulation is a core capability that is necessary to accelerate autonomous vehicle (AV) 
+                    development. However, current approaches for controlling learning-based traffic models require significant domain expertise
+                     and are difficult for practitioners to use. To remedy this, we present CTG++, a scene-level conditional diffusion model
+                      that can be guided by language instructions. Developing this requires tackling two challenges: the need for a realistic 
+                      and controllable traffic model backbone, and an effective method to interface with a traffic model using language. 
+                      To address these challenges, we first propose a scene-level diffusion model equipped with a spatio-temporal transformer
+                       backbone, which generates realistic and controllable traffic. We then harness a large language model (LLM) to convert 
+                       a user's query into a loss function, guiding the diffusion model towards query-compliant generation. Through 
+                       comprehensive evaluation, we demonstrate the effectiveness of our proposed method in generating realistic, 
+                       query-compliant traffic simulations.</p>
+                <!-- <a class="btn btn-primary" href="https://sites.google.com/stanford.edu/copilot">Project Page <span class="glyphicon glyphicon-chevron-right"></span></a> -->
+                <a class="btn btn-primary" href="https://arxiv.org/abs/2306.06344">Paper <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            <div class="col-md-4">
+            </br></br>
+                <a href="https://arxiv.org/abs/2306.06344">
+                    </br> <img class="img-responsive" width="100%" height="100%" src="images/ctgpp_teaser.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-8">
+                <h3>COPILOT: Human-Environment Collision Prediction and Localization from Multi-view Egocentric Videos</h3>
+                <h4>B. Pan, B. Shen, <b>D. Rempe</b>, D. Paschalidou, K. Mo, Y. Yang, and L. Guibas. International Conference on Computer Vision (<b>ICCV</b>), 2023.</h4>
+                <p>The ability to forecast human-environment collisions from egocentric observations is vital to enable collision avoidance 
+                    in applications such as VR, AR, and wearable assistive robotics. In this work, we introduce the challenging problem of 
+                    predicting collisions in diverse environments from multi-view egocentric videos captured from body-mounted cameras. 
+                    Solving this problem requires a generalizable perception system that can classify which human body joints will collide 
+                    and estimate a collision region heatmap to localize collisions in the environment. To achieve this, we propose a 
+                    transformer-based model called COPILOT to perform collision prediction and localization simultaneously, which accumulates 
+                    information across multi-view inputs through a novel 4D space-time-viewpoint attention mechanism. To train our model and 
+                    enable future research on this task, we develop a synthetic data generation framework that produces egocentric videos of 
+                    virtual humans moving and colliding within diverse 3D environments. This framework is then used to establish a large-scale
+                     dataset consisting of 8.6M egocentric RGBD frames. Extensive experiments show that COPILOT generalizes to unseen synthetic 
+                     as well as real-world scenes. We further demonstrate COPILOT outputs are useful for downstream collision avoidance through 
+                     simple closed-loop control.</p>
+                <a class="btn btn-primary" href="https://sites.google.com/stanford.edu/copilot">Project Page <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-primary" href="https://arxiv.org/abs/2210.01781">Paper <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            <div class="col-md-4">
+            </br></br>
+                <a href="https://arxiv.org/abs/2210.01781">
+                    </br> <img class="img-responsive" width="100%" height="100%" src="images/copilot_teaser.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-8">
                 <h3>Trace and Pace: Controllable Pedestrian Animation via Guided Trajectory Diffusion</h3>
                 <h4><b>D. Rempe</b>, Z. Luo, X.B. Peng, Y. Yuan, K. Kitani, K. Kreis, S. Fidler, and O. Litany. Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2023.</h4>
                 <p>We introduce a method for generating realistic pedestrian trajectories and full-body animations that can be controlled to meet 
@@ -117,35 +200,6 @@
             </br></br>
                 <a href="https://arxiv.org/abs/2303.12050">
                     </br> <img class="img-responsive" width="100%" height="100%" src="images/curve_cloud_teaser.png" alt="">
-                </a>
-            </div>
-        </div>
-
-        <hr>
-
-        <div class="row">
-            <div class="col-md-8">
-                <h3>COPILOT: Human-Environment Collision Prediction and Localization from Multi-view Egocentric Videos</h3>
-                <h4>B. Pan, B. Shen, <b>D. Rempe</b>, D. Paschalidou, K. Mo, Y. Yang, and L. Guibas. <b>arXiv</b>, 2023.</h4>
-                <p>The ability to forecast human-environment collisions from egocentric observations is vital to enable collision avoidance 
-                    in applications such as VR, AR, and wearable assistive robotics. In this work, we introduce the challenging problem of 
-                    predicting collisions in diverse environments from multi-view egocentric videos captured from body-mounted cameras. 
-                    Solving this problem requires a generalizable perception system that can classify which human body joints will collide 
-                    and estimate a collision region heatmap to localize collisions in the environment. To achieve this, we propose a 
-                    transformer-based model called COPILOT to perform collision prediction and localization simultaneously, which accumulates 
-                    information across multi-view inputs through a novel 4D space-time-viewpoint attention mechanism. To train our model and 
-                    enable future research on this task, we develop a synthetic data generation framework that produces egocentric videos of 
-                    virtual humans moving and colliding within diverse 3D environments. This framework is then used to establish a large-scale
-                     dataset consisting of 8.6M egocentric RGBD frames. Extensive experiments show that COPILOT generalizes to unseen synthetic 
-                     as well as real-world scenes. We further demonstrate COPILOT outputs are useful for downstream collision avoidance through 
-                     simple closed-loop control.</p>
-                <a class="btn btn-primary" href="https://sites.google.com/stanford.edu/copilot">Project Page <span class="glyphicon glyphicon-chevron-right"></span></a>
-                <a class="btn btn-primary" href="https://arxiv.org/abs/2210.01781">Paper <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-            <div class="col-md-4">
-            </br></br>
-                <a href="https://arxiv.org/abs/2210.01781">
-                    </br> <img class="img-responsive" width="100%" height="100%" src="images/copilot_teaser.png" alt="">
                 </a>
             </div>
         </div>
