@@ -72,6 +72,37 @@
 
         <div class="row">
             <div class="col-md-8">
+                <h3>Multi-Track Timeline Control for Text-Driven 3D Human Motion Generation</h3>
+                <h4>M. Petrovich, O. Litany, U. Iqbal, M.J. Black, G. Varol, X.B. Peng, <b>D. Rempe</b>. <b>arXiv</b>, 2024.</h4>
+                <p>Recent advances in generative modeling have led to promising progress on synthesizing 3D human motion from text, 
+                    with methods that can generate character animations from short prompts and specified durations. However, using 
+                    a single text prompt as input lacks the fine-grained control needed by animators, such as composing multiple 
+                    actions and defining precise durations for parts of the motion. To address this, we introduce the new problem of 
+                    timeline control for text-driven motion synthesis, which provides an intuitive, yet fine-grained, input interface 
+                    for users. Instead of a single prompt, users can specify a multi-track timeline of multiple prompts organized in 
+                    temporal intervals that may overlap. This enables specifying the exact timings of each action and composing multiple 
+                    actions in sequence or at overlapping intervals. To generate composite animations from a multi-track timeline, we 
+                    propose a new test-time denoising method. This method can be integrated with any pre-trained motion diffusion model 
+                    to synthesize realistic motions that accurately reflect the timeline. At every step of denoising, our method processes 
+                    each timeline interval (text prompt) individually, subsequently aggregating the predictions with consideration for the 
+                    specific body parts engaged in each action. Experimental comparisons and ablations validate that our method produces 
+                    realistic motions that respect the semantics and timing of given text prompts.
+                </p>
+                <a class="btn btn-primary" href="https://mathis.petrovich.fr/stmc/">Project Page <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-primary" href="https://arxiv.org/abs/2401.08559">Paper <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            <div class="col-md-4">
+            </br></br>
+                <a href="https://mathis.petrovich.fr/stmc/">
+                    </br> <img class="img-responsive" width="100%" height="100%" src="images/stmc_teaser.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-8">
                 <h3>NIFTY: Neural Object Interaction Fields for Guided Human Motion Synthesis</h3>
                 <h4>N. Kulkarni, <b>D. Rempe</b>, K. Genova, A. Kundu, J. Johnson, D. Fouhey, L. Guibas. <b>arXiv</b>, 2023.</h4>
                 <p>We address the problem of generating realistic 3D motions of humans interacting with objects in a scene. Our key 
@@ -100,7 +131,7 @@
         <div class="row">
             <div class="col-md-8">
                 <h3>Language-Guided Traffic Simulation via Scene-Level Diffusion</h3>
-                <h4>Z. Zhong, <b>D. Rempe</b>, Y. Chen, B. Ivanovic, Y. Cao, D. Xu, M. Pavone, and B. Ray. <b>arXiv</b>, 2023.</h4>
+                <h4>Z. Zhong, <b>D. Rempe</b>, Y. Chen, B. Ivanovic, Y. Cao, D. Xu, M. Pavone, and B. Ray. Conference on Robot Learning (<b>CoRL</b>), 2023.</h4> <h4 style="color:red;">Oral Presentation</h4>
                 <p>Realistic and controllable traffic simulation is a core capability that is necessary to accelerate autonomous vehicle (AV) 
                     development. However, current approaches for controlling learning-based traffic models require significant domain expertise
                      and are difficult for practitioners to use. To remedy this, we present CTG++, a scene-level conditional diffusion model
