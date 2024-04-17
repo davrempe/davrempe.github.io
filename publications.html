@@ -72,8 +72,37 @@
 
         <div class="row">
             <div class="col-md-8">
+                <h3>Generating Human Interaction Motions in Scenes with Text Control</h3>
+                <h4>H. Yi, J. Thies, M.J. Black, X.B. Peng, <b>D. Rempe</b>. <b>arXiv</b>, 2024.</h4>
+                <p>We present TeSMo, a method for text-controlled scene-aware motion generation based on denoising diffusion models. 
+                    Previous text-to-motion methods focus on characters in isolation without considering scenes due to the limited 
+                    availability of datasets that include motion, text descriptions, and interactive scenes. Our approach begins with 
+                    pre-training a scene-agnostic text-to-motion diffusion model, emphasizing goal-reaching constraints on large-scale 
+                    motion-capture datasets. We then enhance this model with a scene-aware component, fine-tuned using data augmented 
+                    with detailed scene information, including ground plane and object shapes. To facilitate training, we embed 
+                    annotated navigation and interaction motions within scenes. The proposed method produces realistic and diverse 
+                    human-object interactions, such as navigation and sitting, in different scenes with various object shapes, 
+                    orientations, initial body positions, and poses. Extensive experiments demonstrate that our approach surpasses 
+                    prior techniques in terms of the plausibility of human-scene interactions, as well as the realism and variety 
+                    of the generated motions.
+                </p>
+                <a class="btn btn-primary" href="https://research.nvidia.com/labs/toronto-ai/tesmo/">Project Page <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-primary" href="./docs/TeSMo_paper.pdf">Paper <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            <div class="col-md-4">
+            </br></br>
+                <a href="https://research.nvidia.com/labs/toronto-ai/tesmo/">
+                    </br> <img class="img-responsive" width="100%" height="100%" src="images/tesmo_teaser.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-8">
                 <h3>Multi-Track Timeline Control for Text-Driven 3D Human Motion Generation</h3>
-                <h4>M. Petrovich, O. Litany, U. Iqbal, M.J. Black, G. Varol, X.B. Peng, <b>D. Rempe</b>. <b>arXiv</b>, 2024.</h4>
+                <h4>M. Petrovich, O. Litany, U. Iqbal, M.J. Black, G. Varol, X.B. Peng, <b>D. Rempe</b>. <b>CVPR Workshop</b> on Human Motion Generation, 2024.</h4>
                 <p>Recent advances in generative modeling have led to promising progress on synthesizing 3D human motion from text, 
                     with methods that can generate character animations from short prompts and specified durations. However, using 
                     a single text prompt as input lacks the fine-grained control needed by animators, such as composing multiple 
@@ -104,7 +133,7 @@
         <div class="row">
             <div class="col-md-8">
                 <h3>NIFTY: Neural Object Interaction Fields for Guided Human Motion Synthesis</h3>
-                <h4>N. Kulkarni, <b>D. Rempe</b>, K. Genova, A. Kundu, J. Johnson, D. Fouhey, L. Guibas. <b>arXiv</b>, 2023.</h4>
+                <h4>N. Kulkarni, <b>D. Rempe</b>, K. Genova, A. Kundu, J. Johnson, D. Fouhey, L. Guibas. Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2024.</h4>
                 <p>We address the problem of generating realistic 3D motions of humans interacting with objects in a scene. Our key 
                     idea is to create a neural interaction field attached to a specific object, which outputs the distance to the 
                     valid interaction manifold given a human pose as input. This interaction field guides the sampling of an 
@@ -122,6 +151,34 @@
             </br></br>
                 <a href="https://nileshkulkarni.github.io/nifty/assets/paper.pdf">
                     </br> <img class="img-responsive" width="100%" height="100%" src="images/nifty_teaser.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-8">
+                <h3>CurveCloudNet: Processing Point Clouds with 1D Structure</h3>
+                <h4>C. Stearns, J. Liu, <b>D. Rempe</b>, D. Paschalidou, J. Park, and L. Guibas. Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2024.</h4>
+                <p>Modern depth sensors such as LiDAR operate by sweeping laser-beams across the scene, resulting in a point cloud with notable 
+                    1D curve-like structures. In this work, we introduce a new point cloud processing scheme and backbone, called CurveCloudNet, 
+                    which takes advantage of the curve-like structure inherent to these sensors. While existing backbones discard the rich 1D 
+                    traversal patterns and rely on Euclidean operations, CurveCloudNet parameterizes the point cloud as a collection of polylines 
+                    (dubbed a "curve cloud"), establishing a local surface-aware ordering on the points. Our method applies curve-specific operations
+                     to process the curve cloud, including a symmetric 1D convolution, a ball grouping for merging points along curves, and an 
+                     efficient 1D farthest point sampling algorithm on curves. By combining these curve operations with existing point-based operations, 
+                     CurveCloudNet is an efficient, scalable, and accurate backbone with low GPU memory requirements. Evaluations on the ShapeNet, 
+                     Kortx, Audi Driving, and nuScenes datasets demonstrate that CurveCloudNet outperforms both point-based and sparse-voxel backbones 
+                     in various segmentation settings, notably scaling better to large scenes than point-based alternatives while exhibiting better 
+                     single object performance than sparse-voxel alternatives.</p>
+                <!-- <a class="btn btn-primary" href="https://sites.google.com/stanford.edu/copilot">Project Page <span class="glyphicon glyphicon-chevron-right"></span></a> -->
+                <a class="btn btn-primary" href="https://arxiv.org/abs/2303.12050">Paper <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            <div class="col-md-4">
+            </br></br>
+                <a href="https://arxiv.org/abs/2303.12050">
+                    </br> <img class="img-responsive" width="100%" height="100%" src="images/curve_cloud_teaser.png" alt="">
                 </a>
             </div>
         </div>
@@ -203,34 +260,6 @@
             </br></br>
                 <a href="https://nv-tlabs.github.io/trace-pace/">
                     </br> <img class="img-responsive" width="100%" height="100%" src="images/trace_teaser.png" alt="">
-                </a>
-            </div>
-        </div>
-
-        <hr>
-
-        <div class="row">
-            <div class="col-md-8">
-                <h3>CurveCloudNet: Processing Point Clouds with 1D Structure</h3>
-                <h4>C. Stearns, J. Liu, <b>D. Rempe</b>, D. Paschalidou, J. Park, S. Mascha, and L. Guibas. <b>arXiv</b>, 2023.</h4>
-                <p>Modern depth sensors such as LiDAR operate by sweeping laser-beams across the scene, resulting in a point cloud with notable 
-                    1D curve-like structures. In this work, we introduce a new point cloud processing scheme and backbone, called CurveCloudNet, 
-                    which takes advantage of the curve-like structure inherent to these sensors. While existing backbones discard the rich 1D 
-                    traversal patterns and rely on Euclidean operations, CurveCloudNet parameterizes the point cloud as a collection of polylines 
-                    (dubbed a "curve cloud"), establishing a local surface-aware ordering on the points. Our method applies curve-specific operations
-                     to process the curve cloud, including a symmetric 1D convolution, a ball grouping for merging points along curves, and an 
-                     efficient 1D farthest point sampling algorithm on curves. By combining these curve operations with existing point-based operations, 
-                     CurveCloudNet is an efficient, scalable, and accurate backbone with low GPU memory requirements. Evaluations on the ShapeNet, 
-                     Kortx, Audi Driving, and nuScenes datasets demonstrate that CurveCloudNet outperforms both point-based and sparse-voxel backbones 
-                     in various segmentation settings, notably scaling better to large scenes than point-based alternatives while exhibiting better 
-                     single object performance than sparse-voxel alternatives.</p>
-                <!-- <a class="btn btn-primary" href="https://sites.google.com/stanford.edu/copilot">Project Page <span class="glyphicon glyphicon-chevron-right"></span></a> -->
-                <a class="btn btn-primary" href="https://arxiv.org/abs/2303.12050">Paper <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-            <div class="col-md-4">
-            </br></br>
-                <a href="https://arxiv.org/abs/2303.12050">
-                    </br> <img class="img-responsive" width="100%" height="100%" src="images/curve_cloud_teaser.png" alt="">
                 </a>
             </div>
         </div>
