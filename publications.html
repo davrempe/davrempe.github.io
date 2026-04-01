@@ -72,6 +72,107 @@
 
         <div class="row">
             <div class="col-md-8">
+                <h3>Kimodo: Scaling Controllable Human Motion Generation</h3>
+                <h4><b>D. Rempe</b> et al.,
+                    <b>arXiv</b>, 2026.</h4>
+                <p>High-quality human motion data is becoming increasingly important for applications 
+                    in robotics, simulation, and entertainment. Recent generative models offer a potential 
+                    data source, enabling human motion synthesis through intuitive inputs like text prompts 
+                    or kinematic constraints on poses. However, the small scale of public mocap datasets has 
+                    limited the motion quality, control accuracy, and generalization of these models. In this work, 
+                    we introduce Kimodo, an expressive and controllable kinematic motion diffusion model trained 
+                    on 700 hours of optical motion capture data. Our model generates high-quality motions while 
+                    being easily controlled through text and a comprehensive suite of kinematic constraints including 
+                    full-body keyframes, sparse joint positions/rotations, 2D waypoints, and dense 2D paths. This is 
+                    enabled through a carefully designed motion representation and two-stage denoiser architecture 
+                    that decomposes root and body prediction to minimize motion artifacts while allowing for flexible 
+                    constraint conditioning. Experiments on the large-scale mocap dataset justify key design decisions 
+                    and analyze how the scaling of dataset size and model size affect performance.
+                </p>
+                <a class="btn btn-primary" href="https://research.nvidia.com/labs/sil/projects/kimodo/">Project Page <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-primary" href="https://research.nvidia.com/labs/sil/projects/kimodo/assets/kimodo_tech_report.pdf">Paper <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            <div class="col-md-4">
+            </br></br>
+                <a href="https://research.nvidia.com/labs/sil/projects/kimodo/">
+                    </br> <img class="img-responsive" width="100%" height="100%" src="images/kimodo_teaser.gif" alt="">
+                </a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-8">
+                <h3>GEM: A Generalist Model for Human Motion</h3>
+                <h4>J. Li, J. Cao, H. Zhang, <b>D. Rempe</b>, J. Kautz, U. Iqbal, Y. Yuan. 
+                    International Conference on Computer Vision (<b>ICCV</b>), 2025.</h4><h4 style="color:red;">Highlight</h4>
+                <p>Human motion modeling traditionally separates motion generation and estimation into 
+                distinct tasks with specialized models. Motion generation models focus on creating diverse, 
+                realistic motions from inputs like text, audio, or keyframes, while motion estimation models aim 
+                to reconstruct accurate motion trajectories from observations like videos. Despite sharing underlying 
+                representations of temporal dynamics and kinematics, this separation limits knowledge transfer between 
+                tasks and requires maintaining separate models. We present GEM, a unified Generalist Model for Human 
+                Motion that bridges motion estimation and generation in a single framework. Our key insight is to 
+                reformulate motion estimation as constrained motion generation, where the output motion must precisely 
+                satisfy observed conditioning signals. Leveraging the synergy between regression and diffusion, GEM 
+                achieves accurate global motion estimation while enabling diverse motion generation. We also introduce 
+                an estimation-guided training objective that exploits in-the-wild videos with 2D annotations and text 
+                descriptions to enhance generative diversity. Furthermore, our novel architecture handles variable-length 
+                motions and mixed multimodal conditions (text, audio, video) at different time intervals, offering flexible 
+                control. This unified approach creates synergistic benefits: generative priors improve estimated motions 
+                under challenging conditions like occlusions, while diverse video data enhances generation capabilities. 
+                Extensive experiments demonstrate GEM's effectiveness as a generalist framework that successfully handles 
+                multiple human motion tasks within a single model.
+                </p>
+                <a class="btn btn-primary" href="https://research.nvidia.com/labs/dair/gem/">Project Page <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-primary" href="https://arxiv.org/abs/2505.01425">Paper <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            <div class="col-md-4">
+            </br></br>
+                <a href="https://research.nvidia.com/labs/dair/gem/">
+                    </br> <img class="img-responsive" width="100%" height="100%" src="images/genmo_teaser.jpg" alt="">
+                </a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-8">
+                <h3>COIN: Control-Inpainting Diffusion Prior for Human and Camera Motion Estimation</h3>
+                <h4>J. Li, Y. Yuan, <b>D. Rempe</b>, H. Zhang, P. Molchanov, C. Lu, J. Kautz, U. Iqbal. 
+                    European Conference on Computer Vision (<b>ECCV</b>), 2024.</h4>
+                <p>Estimating global human motion from moving cameras is challenging due to the entanglement of 
+                    human and camera motions. To mitigate the ambiguity, existing methods leverage learned human 
+                    motion priors, which however often result in oversmoothed motions with misaligned 2D projections. 
+                    To tackle this problem, we propose COIN, a control-inpainting motion diffusion prior that enables 
+                    fine-grained control to disentangle human and camera motions. Although pre-trained motion diffusion 
+                    models encode rich motion priors, we find it non-trivial to leverage such knowledge to guide global
+                     motion estimation from RGB videos. COIN introduces a novel control-inpainting score distillation sampling
+                      method to ensure well-aligned, consistent, and high-quality motion from the diffusion prior within
+                       a joint optimization framework. Furthermore, we introduce a new human-scene relation loss to alleviate 
+                       the scale ambiguity by enforcing consistency among the humans, camera, and scene. Experiments on three
+                        challenging benchmarks demonstrate the effectiveness of COIN, which outperforms the state-of-the-art 
+                        methods in terms of global human motion estimation and camera motion estimation. As an illustrative
+                         example, COIN outperforms the state-of-the-art method by 33% in world joint position error (W-MPJPE) 
+                         on the RICH dataset.
+                </p>
+                <a class="btn btn-primary" href="https://nvlabs.github.io/COIN/">Project Page <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-primary" href="https://arxiv.org/abs/2408.16426">Paper <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            <div class="col-md-4">
+            </br></br>
+                <a href="https://nvlabs.github.io/COIN/">
+                    </br> <img class="img-responsive" width="100%" height="100%" src="images/coin_overview.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <hr>
+        
+        <div class="row">
+            <div class="col-md-8">
                 <h3>Generating Human Interaction Motions in Scenes with Text Control</h3>
                 <h4>H. Yi, J. Thies, M.J. Black, X.B. Peng, <b>D. Rempe</b>. European Conference on Computer Vision (<b>ECCV</b>), 2024.</h4>
                 <p>We present TeSMo, a method for text-controlled scene-aware motion generation based on denoising diffusion models. 
